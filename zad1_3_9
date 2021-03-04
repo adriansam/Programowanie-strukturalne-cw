@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int rodzaj;
+    float a,b;
+    printf("Wybierz rodzaj dzialania arytmetycznego: \n");
+    printf("1-dodawanie\n");
+    printf("2-odejmowanie\n");
+    printf("3-mnozenie\n");
+    printf("4-dzielenie\n");
+    printf("5-potegowanie jednej do drugiej\n");
+    printf("6-pierwiastki\n");
+    scanf("%d", &rodzaj);
+    printf("Podaj a: \n");
+    scanf("%f", &a);
+    printf("Podaj b: \n");
+    scanf("%f", &b);
+    if(rodzaj==1){
+    printf("wynik= %f", a+b);
+    }
+    else if(rodzaj==2){
+    printf("wynik= %f", a-b);
+    }
+    else if(rodzaj==3){
+    printf("wynik= %f", a*b);
+    }
+    else if(rodzaj==4){
+    printf("wynik= %f", a/b);
+    }
+    else if(rodzaj==5){
+    printf("wynik= %f", pow(a,b));
+    }
+    else if(rodzaj==6){
+    printf("wynik a= %f\n", sqrt(a));
+    printf("wynik b= %f", sqrt(b));
+    }
+
+    return 0;
+}
