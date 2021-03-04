@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int n,wynik=0;
+    printf("Podaj liczbe wieksza od zera: \n");
+    scanf("%d", &n);
+    for(int i=0; i<=n; i++){
+        int k=pow(i,2);
+        wynik+=k;
+    }
+    printf("wynik= %d", wynik);
+    return 0;
+}
