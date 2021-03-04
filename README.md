@@ -1,1 +1,1 @@
-# Programowanie-strukturalne-cw
+# Praca domowa
