@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    char znak;
+    int i = 0;
+    while(znak!='#'){
+        znak = getchar();
+        i++;
+        }
+    printf("ilosc znakow: %d", i);
+    return 0;
+}
