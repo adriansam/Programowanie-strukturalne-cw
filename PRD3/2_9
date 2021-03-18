@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+void rzad_zn(char,int,int);
+int main()
+{
+    rzad_zn('z',5,3);
+    return 0;
+}
+void rzad_zn(char ch,int i,int j)
+{
+    int n=5;
+    for(int s=0; s<j; s++)
+    {
+        for(int k=1; k<=i; k++)
+        {
+            printf("%c ", ch);
+        }
+        printf("\n");
+    }
+}
