@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+void min(double,double);
+int main()
+{
+    printf("Hello world!\n");
+    min(5,3);
+    return 0;
+}
+void min(double x,double y)
+{
+    if(x<y)
+    printf("%lf", x);
+    else
+        printf("%lf", y);
+}
