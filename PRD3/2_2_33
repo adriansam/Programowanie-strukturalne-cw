@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void def(unsigned int a, unsigned int b, unsigned int c, unsigned int d,unsigned int e);
+int main()
+{
+    int a,b,c,d,e,result;
+    printf("Podaj a: \n");
+    scanf("%d", &a);
+    printf("Podaj b: \n");
+    scanf("%d", &b);
+    printf("Podaj c: \n");
+    scanf("%d", &c);
+    printf("Podaj d: \n");
+    scanf("%d", &d);
+    printf("Podaj e: \n");
+    scanf("%d", &e);
+    def(a,b,c,d,e);
+
+    return 0;
+}
+void def(unsigned int a, unsigned int b, unsigned int c, unsigned int d,unsigned int e)
+{
+    printf("Wynik a+b= %d", a+b);
+    printf("\n");
+    printf("Wynik a+b+c= %d", a+b+c);
+    printf("\n");
+    printf("Wynik a+b+c+d= %d", a+b+c+d);
+    printf("\n");
+    printf("Wynik a+b+c+d+e= %d", a+b+c+d+e);
+}
