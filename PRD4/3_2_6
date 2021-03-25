@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+int zmiana(int n, int *w);
+int main()
+{
+    int x=100,n;
+    int *w=&x;
+    printf("Podaj zamiennik n:\n");
+    scanf("%d", &n);
+    printf("Przed zmiana x= %d\n", x);
+    zmiana(n,w);
+    printf("Po zmianie x= %d\n", x);
+    return 0;
+}
+int zmiana(int n, int *w)
+{
+   return *w=n;
+}
