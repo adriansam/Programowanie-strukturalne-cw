@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+double wskaznik();
+int main()
+{
+    printf("Hello world\n");
+    wskaznik();
+    return 0;
+}
+double wskaznik()
+{
+    int i=5,*w=&i;
+    return printf("%d", w);
+}
