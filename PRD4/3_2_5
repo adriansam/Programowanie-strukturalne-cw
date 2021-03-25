@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+int zamiennik(int *a, int *b);
+int main()
+{
+    int x,y;
+    printf("Podaj x:\n");
+    scanf("%d", &x);
+    printf("Podaj y:\n");
+    scanf("%d", &y);
+    printf("Przed zamianą: x= %d, y=%d\n", x, y);
+    zamiennik(&x,&y);
+    printf("Po zamianie: x= %d, y=%d\n", x, y);
+
+    return 0;
+}
+int zamiennik(int *a, int *b)
+{
+    if(*a>*b)
+    {
+        int temp=*a;
+        *a=*b;
+        *b=temp;
+    }else
+    printf("argument x jest mniejszy niż argument y");
+}
